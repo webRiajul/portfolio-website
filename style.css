@@ -1,0 +1,118 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Roboto:wght@900&family=Rubik+Beastly&display=swap');
+/* =-=-=-=-=-=
+font-family: 'Dongle', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik Beastly', cursive;
+=-=-=-=-=-=*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+    color: white;
+}
+nav
+{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    'menu-icon logo search-icon'
+    ;
+    place-items: center;
+}
+.menu-icon
+{
+    grid-area: menu-icon;
+}
+.logo
+{
+    grid-area: logo;
+}
+.logo h1
+{
+    font-size: 75px;
+    font-weight: 900;
+    font-family: 'Dongle', sans-serif;
+}
+.logo h1 span
+{
+    color: rgb(238, 120, 35);
+}
+.search-icon
+{
+    grid-area: search-icon;
+}
+/* banner */
+.banner
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 5fr;
+    grid-template-areas: 
+    'left-side right-side';
+    place-items: center;
+    padding: 50px;
+}
+.left-side
+{
+    grid-area: left-side;
+    position: relative;
+    margin-left: 50px;
+}
+.left-side h2
+{
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    padding-top: 50px;
+}
+.left-side h2 span
+{
+    color: rgb(238, 120, 35);
+}
+.left-side ul
+{
+    list-style: none;
+    position: absolute;
+    top: 20%;
+    left: -20%;
+}
+.left-side ul li
+{
+    height: 50px;
+}
+.left-side ul li a i
+{
+    font-size: 20px;
+}
+.right-side
+{
+    grid-area: right-side;
+    padding-top: 50px;
+    
+}
+.right-side img
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 10px 10px white,
+    0 0 15px 15px rgb(182, 168, 168),
+    0 0 15px 15px rgb(128, 120, 120);
+}
+.button a
+{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    padding: 15px 30px;
+    color: black;
+    position: absolute;
+    left: 6%;
+    bottom: 10%;
+}
