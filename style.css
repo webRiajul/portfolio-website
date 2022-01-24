@@ -13,6 +13,10 @@ font-family: 'Rubik Beastly', cursive;
     background: black;
     color: white;
 }
+a
+{
+    text-decoration: none;
+}
 nav
 {
     display: grid;
@@ -86,7 +90,20 @@ nav
 }
 .left-side ul li a i
 {
+    background: white;
+    color: black;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     font-size: 20px;
+}
+.left-side ul li a i:hover
+{
+    background: rgb(238, 120, 35);
+    transition: all 0.7s;
 }
 .right-side
 {
@@ -113,6 +130,17 @@ nav
     padding: 15px 30px;
     color: black;
     position: absolute;
-    left: 6%;
-    bottom: 10%;
+    font-family: 'Roboto', 'Sans Serif';
+    left: 14%;
+    bottom: 16%;
+}
+.button a:hover
+{
+    background: rgb(100, 99, 99);
+    color: white;
+    font-weight: 700;
+    transition: all 0.7s;
+    border-left: 2px solid red;
+    border-top:2px solid yellow;
+    border-top-width: 50%;
 }
